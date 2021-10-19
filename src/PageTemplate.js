@@ -1,4 +1,8 @@
+const { builtinModules } = require("module");
 
+function generatePage(Team) {
+console.log({Team}); 
+let data =  `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,22 +19,16 @@
     </header>
     <div class="container">
         <div class="row" id="team">
-         <div class="col">
-        <div class="card" style="width: 18rem;">
-            <div class="card-header bg-primary">
-                <h4 class="text-light">Antonio</h4>
-                <h5>Manager</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">145</li>
-                <li class="list-group-item">undefined </li>
-                <a href="mailto:antonio@gmail.com" class="btn btn-secondary">antonio@gmail.com</a>
-            </ul>
-        </div>
-    </div>
-    
+        ${Team.map(employee => {
+            return employee; 
+        })}
         </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+`
+return data;
+ 
+}
+module.exports = generatePage;
