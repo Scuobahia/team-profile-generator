@@ -29,6 +29,8 @@ n/a
 ### Guidelines how to contribute:
 n/a
 ### Image preview
+<img width="2560" alt="Screen Shot 2021-10-19 at 12 44 34 AM" src="https://user-images.githubusercontent.com/82003896/137857484-60861631-3e44-495e-990b-fb8684cc3d16.png">
+
 
 ### Questions:
 If you have any questions contact me on [GitHub](https://github.com/Scuobahia) or contact 
